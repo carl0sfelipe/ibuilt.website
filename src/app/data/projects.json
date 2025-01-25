@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "Plataforma E-commerce",
+    "description": "Loja online com Next.js e Stripe",
+    "url": "https://exemplo.com",
+    "tech": ["Next.js", "TypeScript", "Tailwind"],
+    "featured": true
+  },
+  {
+    "id": "2",
+    "title": "Sistema de Gerenciamento",
+    "description": "Dashboard administrativo com gráficos e relatórios",
+    "url": "https://exemplo2.com",
+    "tech": ["React", "Node.js", "PostgreSQL"],
+    "featured": true
+  },
+  {
+    "id": "3",
+    "title": "Aplicativo Mobile",
+    "description": "App de delivery com integração de pagamentos",
+    "url": "https://exemplo3.com",
+    "tech": ["React Native", "Expo", "Firebase"],
+    "featured": true
+  }
+]

@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    background: linear-gradient(135deg, #87CEEB, #FFFFFF);
+    background-size: 200% 200%;
+    animation: gradientFlow 12s ease infinite;
+    --border: 214 32% 91%;
+    --muted-foreground: 215 16% 47%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 239 84% 67%;
+    --secondary-foreground: 210 40% 98%;
+    --accent: 38 96% 53%;
+    --accent-foreground: 210 40% 98%;
+    --success: 160 84% 39%;
+    --error: 0 84% 60%;
+    --warning: 38 96% 53%;
+    --info: 217 91% 60%;
+  }
+
+  .dark {
+    --background: 222 47% 4%;
+    --foreground: 0 0% 100%;
+    background: linear-gradient(135deg, #000055, #000000);
+    background-size: 200% 200%;
+    animation: gradientFlow 12s ease infinite;
+    --border: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 239 84% 67%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 38 96% 53%;
+    --accent-foreground: 0 0% 100%;
+    --success: 160 84% 39%;
+    --error: 0 84% 60%;
+    --warning: 38 96% 53%;
+    --info: 217 91% 60%;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] border border-gray-200 dark:border-gray-700 hover:-translate-y-1 hover:shadow-xl;
+  }
+
+  .card-hover {
+    @apply hover:-translate-y-1 hover:shadow-xl transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)];
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition-all duration-200 ease-[cubic-bezier(0.4,0,0.2,1)] hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground px-4 py-2 rounded-md hover:bg-secondary/90 transition-all duration-200 ease-[cubic-bezier(0.4,0,0.2,1)] hover:shadow-lg;
+  }
+
+  .hover-scale {
+    @apply hover:scale-[1.02] transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)];
+  }
+
+  .fade-in {
+    @apply animate-fade-in;
+  }
+
+  .hover-glow {
+    @apply hover:shadow-[0_0_20px_-5px_rgba(0,0,0,0.15)] dark:hover:shadow-[0_0_20px_-5px_rgba(255,255,255,0.15)] transition-shadow duration-300;
+  }
+
+  .hover-underline {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full;
+  }
+
+  .hover-rotate {
+    @apply hover:rotate-1 transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)];
+  }
+
+  .hover-translate {
+    @apply hover:-translate-y-1 transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)];
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .max-w-content {
+    max-width: 1440px;
+  }
+
+  .min-h-screen {
+    min-height: 100vh;
+  }
+}
