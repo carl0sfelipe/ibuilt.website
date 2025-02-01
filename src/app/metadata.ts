@@ -1,13 +1,14 @@
 import { Metadata } from 'next';
+import { SITE_CONFIG } from '@/utils/constants';
 
 export const metadata: Metadata = {
-  title: 'ibuilt.website | Portfólio',
-  description: 'Desenvolvedor Full Stack especializado em Next.js e soluções performáticas',
+  title: SITE_CONFIG.title,
+  description: SITE_CONFIG.description,
   openGraph: {
-    title: 'ibuilt.website | Portfólio',
-    description: 'Desenvolvedor Full Stack especializado em Next.js e soluções performáticas',
-    url: 'https://ibuilt.website',
-    siteName: 'ibuilt.website',
+    title: SITE_CONFIG.title,
+    description: SITE_CONFIG.description,
+    url: SITE_CONFIG.url,
+    siteName: SITE_CONFIG.title,
     images: [
       {
         url: 'https://ibuilt.website/og-image.png',

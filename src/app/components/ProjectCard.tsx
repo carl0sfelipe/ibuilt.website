@@ -23,7 +23,9 @@ export default function ProjectCard({ project, index }: { project: Project; inde
           className={`absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-in-out ${isHovered ? 'scale-105 opacity-95' : 'scale-100 opacity-100'}`}
         />
         <div className="absolute bottom-4 left-4 right-4">
-          <h3 className="text-2xl font-bold text-white drop-shadow-lg">{project.title}</h3>
+          <h3 className="text-2xl font-bold text-white drop-shadow-lg text-shadow">
+            {project.title}
+          </h3>
         </div>
       </div>
       

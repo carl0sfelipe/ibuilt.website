@@ -110,4 +110,20 @@
   .min-h-screen {
     min-height: 100vh;
   }
+
+  .text-shadow {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .hover-scale {
+    @apply hover:scale-[1.02] transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)];
+  }
+
+  .hover-glow {
+    @apply hover:shadow-[0_0_20px_-5px_rgba(0,0,0,0.15)] dark:hover:shadow-[0_0_20px_-5px_rgba(255,255,255,0.15)] transition-shadow duration-300;
+  }
+
+  .hover-underline {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full;
+  }
 }
