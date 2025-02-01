@@ -6,7 +6,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-6 flex flex-col items-center space-y-4">
         <div className="flex space-x-6">
           <Link 
-            href="https://github.com" 
+            href="https://github.com/carl0sfelipe" 
             target="_blank"
             className="text-foreground/90 hover:text-primary transition-colors duration-200"
           >
@@ -16,7 +16,7 @@ export function Footer() {
           </Link>
           
           <Link 
-            href="https://linkedin.com" 
+            href="https://linkedin.com/in/carl0sfelipe" 
             target="_blank"
             className="text-foreground/90 hover:text-primary transition-colors duration-200"
           >

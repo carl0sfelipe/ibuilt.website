@@ -4,6 +4,21 @@ import { SITE_CONFIG } from '@/utils/constants';
 export const metadata: Metadata = {
   title: SITE_CONFIG.title,
   description: SITE_CONFIG.description,
+  icons: {
+    icon: [
+      {
+        url: '/logo.png',
+        href: '/logo.png',
+      }
+    ],
+    apple: [
+      {
+        url: '/logo.png',
+        sizes: '180x180',
+        type: 'image/png',
+      }
+    ],
+  },
   openGraph: {
     title: SITE_CONFIG.title,
     description: SITE_CONFIG.description,

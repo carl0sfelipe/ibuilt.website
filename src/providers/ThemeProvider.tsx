@@ -1,3 +1,5 @@
+'use client';
+
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { type Theme, type ThemeContextType } from '@/types';
 // ... resto do código atual 

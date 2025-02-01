@@ -1,4 +1,7 @@
+'use client';
+
 import Link from 'next/link';
+import Image from 'next/image';
 import { useTheme } from '@/providers/ThemeProvider';
 
 export function Header() {
@@ -7,8 +10,18 @@ export function Header() {
   return (
     <header className="w-full border-b border-gray-200 dark:border-gray-700 bg-background">
       <div className="container mx-auto px-4 py-6 flex items-center justify-between">
-        <Link href="/" className="text-xl font-semibold text-gray-800 dark:text-gray-100 hover:text-primary transition-colors duration-200">
-          carl0sfelipe
+        <Link href="/" className="relative hover:opacity-80 transition-opacity duration-200">
+          <Image
+            src={theme === 'light' ? '/logo.png' : '/logo-white.png'}
+            alt="Carl0sfelipe Logo"
+            width={80}
+            height={50}
+            className="h-auto w-auto"
+            priority
+          />
+          <span className="absolute top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-x font-semibold text-gray-800 dark:text-gray-100">
+            carl0sfelipe
+          </span>
         </Link>
         
         <nav className="flex items-center space-x-6">

@@ -1,6 +1,4 @@
-'use client';
-
-import React, { ReactNode, useEffect } from 'react';
+import React, { ReactNode } from 'react';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/providers/ThemeProvider';
@@ -9,6 +7,8 @@ import { Footer } from '@/components/layout/Footer';
 import { metadata } from './metadata';
 
 const inter = Inter({ subsets: ['latin'] });
+
+export { metadata };
 
 export default function RootLayout({
   children,
