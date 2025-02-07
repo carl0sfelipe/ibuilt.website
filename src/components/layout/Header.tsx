@@ -8,7 +8,7 @@ export function Header() {
   const { theme, toggleTheme } = useTheme();
   
   return (
-    <header className="w-full border-b border-gray-200 dark:border-gray-700 bg-background">
+    <header className="w-full border-b border-black dark:border-gray-700 bg-background">
       <div className="container mx-auto px-4 py-6 flex items-center justify-between">
         <Link href="/" className="relative hover:opacity-80 transition-opacity duration-200">
           <Image
@@ -19,7 +19,7 @@ export function Header() {
             className="h-auto w-auto"
             priority
           />
-          <span className="absolute top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-x font-semibold text-gray-800 dark:text-gray-100">
+          <span className="absolute top-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-sm font-semibold text-gray-800 dark:text-gray-100">
             carl0sfelipe
           </span>
         </Link>
